@@ -17,4 +17,11 @@ class Calculator {
         }
         return a / b;
     }
+
+    public double sqrt(double a) throws InvalidInputException {
+        if (a < 0) {
+            throw new InvalidInputException("Cannot take square root of a negative number.");
+        }
+        return Math.sqrt(a);
+    }
 }
