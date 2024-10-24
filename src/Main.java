@@ -31,6 +31,9 @@ public class Main {
                 case "/":
                     result = calculator.divide(num1, num2);
                     break;
+                case "sqrt":
+                    result = calculator.sqrt(num1);
+                    break;
                 default:
                     System.out.println("Invalid operation.");
                     validOperation = false;
